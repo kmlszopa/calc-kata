@@ -20,6 +20,8 @@ class CalculatorSpec extends Specification{
         3      || "1,2"
         6      || "1,2,3"
         7      || "1,2\n4"
+        2      || "2,1001"
+        6      || "*%\n1*2%3"
     }
 
     def "should throw exception when number is negative"() {
@@ -36,7 +38,7 @@ class CalculatorSpec extends Specification{
 
         then:
         Calculator.NegativeNumberException ex = thrown()
-        ex.message == "Negatives: -1 -2"
+        ex.message == "negatives not allowed -1 -2"
     }
 
 
