@@ -1,2 +1,0 @@
-# calc-kata
-# calc-kata
